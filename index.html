@@ -6,38 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: radial-gradient(circle at top, #3a2a00, #000);
+      font-family: Arial, Helvetica, sans-serif;
+      background: radial-gradient(circle at top, #3a2a00, #000000);
       color: #ffffff;
     }
 
     .container {
-      max-width: 420px;
-      margin: auto;
-      padding: 24px;
-      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
     }
 
     .card {
-      background: linear-gradient(180deg, #1a1400, #000);
-      border-radius: 22px;
-      padding: 26px 22px;
-      box-shadow: 0 0 30px rgba(255, 200, 0, 0.15);
-    }
-
-    .logo-wrap {
-      margin-bottom: 16px;
+      width: 100%;
+      max-width: 420px;
+      background: linear-gradient(180deg, #1a1400, #000000);
+      border-radius: 24px;
+      padding: 28px 22px;
+      box-shadow: 0 0 35px rgba(255, 200, 0, 0.2);
+      text-align: center;
     }
 
     .logo {
-      width: 90px;
-      height: auto;
+      width: 96px;
+      margin-bottom: 14px;
     }
 
     h1 {
-      margin: 10px 0 6px;
+      margin: 6px 0;
+      font-size: 26px;
       color: #ffcc00;
       letter-spacing: 1px;
     }
@@ -45,14 +50,14 @@
     .subtitle {
       font-size: 14px;
       color: #dddddd;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
 
     .stats {
       display: flex;
       justify-content: space-between;
       gap: 10px;
-      margin-bottom: 22px;
+      margin-bottom: 24px;
     }
 
     .stat {
@@ -65,38 +70,39 @@
 
     .stat strong {
       display: block;
-      color: #ffcc00;
       font-size: 16px;
+      color: #ffcc00;
     }
 
     .stat span {
       font-size: 12px;
-      color: #ccc;
+      color: #cccccc;
     }
 
     .cta {
       display: block;
       background: linear-gradient(90deg, #ffcc00, #ff9900);
-      color: #000;
+      color: #000000;
       text-decoration: none;
       font-weight: bold;
       padding: 16px;
       border-radius: 30px;
-      margin: 20px 0;
-      box-shadow: 0 0 18px rgba(255, 200, 0, 0.6);
+      margin: 22px 0;
+      box-shadow: 0 0 20px rgba(255, 200, 0, 0.6);
     }
 
     .features {
       text-align: left;
       font-size: 13px;
       line-height: 1.7;
-      color: #e6e6e6;
-      margin-top: 10px;
+      color: #eeeeee;
+      padding-left: 0;
+      margin: 0;
     }
 
     .features li {
       list-style: none;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
 
     .features li::before {
@@ -107,7 +113,7 @@
 
     .divider {
       height: 1px;
-      background: #333;
+      background: #333333;
       margin: 18px 0;
     }
 
@@ -118,9 +124,9 @@
     }
 
     footer {
-      margin-top: 12px;
+      margin-top: 14px;
       font-size: 11px;
-      color: #777;
+      color: #777777;
     }
   </style>
 </head>
@@ -129,9 +135,8 @@
   <div class="container">
     <div class="card">
 
-      <div class="logo-wrap">
-        <img src="logo.png" alt="NITIN TRADER Logo" class="logo">
-      </div>
+      <!-- LOGO -->
+      <img src="logo.png" alt="NITIN TRADER Logo" class="logo">
 
       <h1>NITIN TRADER</h1>
       <div class="subtitle">Premium Educational Telegram Community</div>
@@ -151,6 +156,7 @@
         </div>
       </div>
 
+      <!-- TELEGRAM CTA -->
       <a class="cta" href="https://t.me/sikkimgame_rajagame_damangames" target="_blank">
         JOIN OFFICIAL TELEGRAM
       </a>
@@ -166,7 +172,7 @@
 
       <div class="disclaimer">
         Disclaimer: This platform is strictly for educational and informational purposes only.
-        No financial advice, no guaranteed outcomes. Participation is voluntary.
+        No financial advice. No guaranteed outcomes. Participation is voluntary.
       </div>
 
       <footer>
