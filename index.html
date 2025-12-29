@@ -1,185 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8">
   <title>NITIN TRADER</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: radial-gradient(circle at top, #3a2a00, #000000);
-      color: #ffffff;
+      background: #000;
+      font-family: Arial, sans-serif;
+      color: #fff;
     }
 
-    .container {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-    }
-
-    .card {
-      width: 100%;
-      max-width: 420px;
-      background: linear-gradient(180deg, #1a1400, #000000);
-      border-radius: 24px;
-      padding: 28px 22px;
-      box-shadow: 0 0 35px rgba(255, 200, 0, 0.2);
+    .box {
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 25px;
+      background: #111;
+      border-radius: 20px;
       text-align: center;
     }
 
-    .logo {
-      width: 96px;
-      margin-bottom: 14px;
+    img {
+      width: 90px;
+      margin-bottom: 15px;
     }
 
     h1 {
-      margin: 6px 0;
-      font-size: 26px;
       color: #ffcc00;
-      letter-spacing: 1px;
+      margin: 10px 0;
     }
 
-    .subtitle {
+    p {
       font-size: 14px;
-      color: #dddddd;
-      margin-bottom: 22px;
+      color: #ccc;
     }
 
-    .stats {
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 24px;
-    }
-
-    .stat {
-      flex: 1;
-      background: #1f1a00;
-      border-radius: 14px;
-      padding: 12px 8px;
-      border: 1px solid #3a3000;
-    }
-
-    .stat strong {
+    a {
       display: block;
-      font-size: 16px;
-      color: #ffcc00;
-    }
-
-    .stat span {
-      font-size: 12px;
-      color: #cccccc;
-    }
-
-    .cta {
-      display: block;
-      background: linear-gradient(90deg, #ffcc00, #ff9900);
-      color: #000000;
+      margin: 20px 0;
+      padding: 15px;
+      background: #ffcc00;
+      color: #000;
       text-decoration: none;
-      font-weight: bold;
-      padding: 16px;
       border-radius: 30px;
-      margin: 22px 0;
-      box-shadow: 0 0 20px rgba(255, 200, 0, 0.6);
+      font-weight: bold;
     }
 
-    .features {
+    ul {
       text-align: left;
       font-size: 13px;
-      line-height: 1.7;
-      color: #eeeeee;
-      padding-left: 0;
-      margin: 0;
+      padding: 0;
     }
 
-    .features li {
+    li {
       list-style: none;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
-    .features li::before {
+    li::before {
       content: "✔ ";
       color: #ffcc00;
-      font-weight: bold;
-    }
-
-    .divider {
-      height: 1px;
-      background: #333333;
-      margin: 18px 0;
-    }
-
-    .disclaimer {
-      font-size: 11px;
-      color: #aaaaaa;
-      line-height: 1.6;
     }
 
     footer {
-      margin-top: 14px;
       font-size: 11px;
-      color: #777777;
+      color: #777;
+      margin-top: 15px;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <div class="card">
+  <div class="box">
 
-      <!-- LOGO -->
-      <img src="logo.png" alt="NITIN TRADER Logo" class="logo">
+    <img src="logo.png">
 
-      <h1>NITIN TRADER</h1>
-      <div class="subtitle">Premium Educational Telegram Community</div>
+    <h1>NITIN TRADER</h1>
+    <p>Premium Educational Telegram Community</p>
 
-      <div class="stats">
-        <div class="stat">
-          <strong>50K+</strong>
-          <span>Reach</span>
-        </div>
-        <div class="stat">
-          <strong>Live</strong>
-          <span>Updates</span>
-        </div>
-        <div class="stat">
-          <strong>Secure</strong>
-          <span>Access</span>
-        </div>
-      </div>
+    <a href="https://t.me/sikkimgame_rajagame_damangames">
+      JOIN OFFICIAL TELEGRAM
+    </a>
 
-      <!-- TELEGRAM CTA -->
-      <a class="cta" href="https://t.me/sikkimgame_rajagame_damangames" target="_blank">
-        JOIN OFFICIAL TELEGRAM
-      </a>
+    <ul>
+      <li>Educational & informational only</li>
+      <li>No financial advice</li>
+      <li>No guaranteed outcomes</li>
+      <li>Transparent & responsible sharing</li>
+    </ul>
 
-      <ul class="features">
-        <li>Educational & informational analysis only</li>
-        <li>Professional community discussions</li>
-        <li>Transparent & responsible sharing</li>
-        <li>Mobile-friendly secure access</li>
-      </ul>
+    <footer>
+      © 2025 NITIN TRADER
+    </footer>
 
-      <div class="divider"></div>
-
-      <div class="disclaimer">
-        Disclaimer: This platform is strictly for educational and informational purposes only.
-        No financial advice. No guaranteed outcomes. Participation is voluntary.
-      </div>
-
-      <footer>
-        © 2025 NITIN TRADER • All Rights Reserved
-      </footer>
-
-    </div>
   </div>
 </body>
 </html>
