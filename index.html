@@ -1,48 +1,131 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>NITIN TRADER</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NITIN TRADERS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <style>
-body{margin:0;background:#000;font-family:Arial;color:#fff;}
-.wrapper{max-width:420px;margin:auto;padding:20px;}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:radial-gradient(circle at top,#0b1c3a,#000);
+  color:#fff;
+}
+
+.container{
+  max-width:420px;
+  margin:auto;
+  padding:20px;
+}
+
+/* LOGO */
 .logo-circle{
- width:180px;height:180px;border-radius:50%;
- background:rgba(0,0,0,0.7);
- backdrop-filter:blur(10px);
- border:3px solid gold;
- margin:30px auto;
- display:flex;align-items:center;justify-content:center;
- box-shadow:0 0 25px gold;
+  width:190px;
+  height:190px;
+  border-radius:50%;
+  margin:30px auto 10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(0,0,0,0.55);
+  backdrop-filter:blur(12px);
+  border:3px solid #2aa7ff;
+  box-shadow:0 0 35px rgba(42,167,255,0.9);
 }
-.logo-text{font-size:40px;font-weight:bold;color:gold;}
+
+.logo-text{
+  font-size:28px;
+  font-weight:900;
+  letter-spacing:2px;
+  color:#ffffff;
+  text-shadow:
+    0 0 8px #2aa7ff,
+    0 0 16px #2aa7ff;
+}
+
+/* TITLE */
+h1{
+  text-align:center;
+  color:#ffd700;
+  font-size:22px;
+  margin:10px 0 20px;
+}
+
+/* BUTTON */
 .btn{
- background:gold;color:#000;
- padding:16px;border-radius:12px;
- text-align:center;font-weight:bold;
- text-decoration:none;display:block;
- margin:20px 0;
- animation:shine 2s infinite;
+  display:block;
+  text-align:center;
+  text-decoration:none;
+  padding:16px;
+  border-radius:14px;
+  background:linear-gradient(90deg,#1e90ff,#2aa7ff);
+  color:#fff;
+  font-weight:bold;
+  font-size:16px;
+  margin:18px 0;
+  animation:pulse 1.5s infinite;
 }
-@keyframes shine{
- 0%{opacity:1;}
- 50%{opacity:.7;}
- 100%{opacity:1;}
+
+@keyframes pulse{
+  0%{box-shadow:0 0 0 rgba(42,167,255,.6);}
+  50%{box-shadow:0 0 25px rgba(42,167,255,1);}
+  100%{box-shadow:0 0 0 rgba(42,167,255,.6);}
 }
-h1{text-align:center;color:gold;}
-.preview{background:#111;border-radius:14px;padding:12px;text-align:center;}
+
+/* PREVIEW */
+.preview{
+  background:linear-gradient(180deg,#5a2ca0,#2b0f50);
+  border-radius:18px;
+  padding:14px;
+}
+
+.preview-box{
+  background:#111;
+  border-radius:12px;
+  padding:14px;
+  text-align:center;
+  color:#ccc;
+  font-size:14px;
+}
+
+footer{
+  text-align:center;
+  font-size:11px;
+  color:#777;
+  margin-top:16px;
+}
 </style>
 </head>
+
 <body>
-<div class="wrapper">
- <div class="logo-circle">
-  <div class="logo-text">DmWin</div>
- </div>
- <h1>BITTU TRADER</h1>
- <a class="btn" href="https://t.me/sikkimgame_rajagame_damangames">JOIN TELEGRAM NOW</a>
- <div class="preview">Educational Telegram Preview</div>
- <a class="btn" href="https://t.me/sikkimgame_rajagame_damangames">JOIN TELEGRAM NOW</a>
+<div class="container">
+
+  <div class="logo-circle">
+    <div class="logo-text">NITIN TRADERS</div>
+  </div>
+
+  <h1>Official Educational Telegram Channel</h1>
+
+  <a class="btn" href="https://t.me/sikkimgame_rajagame_damangames">
+    JOIN TELEGRAM NOW
+  </a>
+
+  <div class="preview">
+    <div class="preview-box">
+      Community Preview • Learning Based Updates<br>
+      No Guarantees • Educational Purpose Only
+    </div>
+  </div>
+
+  <a class="btn" href="https://t.me/sikkimgame_rajagame_damangames">
+    JOIN TELEGRAM NOW
+  </a>
+
+  <footer>
+    © 2025 NITIN TRADERS | Educational Use Only
+  </footer>
+
 </div>
 </body>
 </html>
